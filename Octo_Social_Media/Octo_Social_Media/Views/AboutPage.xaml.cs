@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Octo_Social_Media.Models;
+using System;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,6 +14,13 @@ namespace Octo_Social_Media.Views
         public AboutPage()
         {
             InitializeComponent();
+        }
+
+        async void OnRetrieveInfoClick(object sender, EventArgs e)
+        {
+            var socialMediaItem = (SocialMediaItem)BindingContext;
+            await App.Database.GetInfoAsync(socialMediaItem);
+
         }
     }
 }
