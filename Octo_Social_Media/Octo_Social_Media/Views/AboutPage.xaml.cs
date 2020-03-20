@@ -18,8 +18,8 @@ namespace Octo_Social_Media.Views
 
         async void OnRetrieveInfoClick(object sender, EventArgs e)
         {
-            var socialMediaItem = (SocialMediaItem)BindingContext;
-            await App.Database.GetInfoAsync(socialMediaItem);
+            
+           
 
         }
     }

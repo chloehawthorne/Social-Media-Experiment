@@ -9,7 +9,6 @@ namespace Octo_Social_Media
 {
     public partial class App : Application
     {
-        static SocialMediaDatabase database;
 
         public App()
         {
@@ -18,17 +17,8 @@ namespace Octo_Social_Media
             DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
-        public static SocialMediaDatabase Database
-        {
-            get
-            {
-                if(database == null )
-                {
-                    database = new SocialMediaDatabase();
-                }
-                return database;
-            }
-        }
+
+        
         protected override void OnStart()
         {
         }
