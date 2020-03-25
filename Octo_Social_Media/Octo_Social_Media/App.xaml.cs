@@ -15,6 +15,8 @@ namespace Octo_Social_Media
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            Akavache.Registrations.Start("Octo");
+
             MainPage = new MainPage();
         }
 

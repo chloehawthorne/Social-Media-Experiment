@@ -6,16 +6,24 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Akavache;
+using Akavache.Core;
+using Akavache.Internal;
+using Akavache.Sqlite3;
+using System.Reactive.Linq;
 
 namespace Octo_Social_Media.Droid
 {
-    [Activity(Label = "Octo_Social_Media", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Octo", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+
+            Akavache.Registrations.Start("Octo");
 
             base.OnCreate(savedInstanceState);
 
