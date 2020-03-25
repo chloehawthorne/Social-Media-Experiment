@@ -14,7 +14,7 @@ namespace Octo_Social_Media
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LandingPage());
         }
 
         protected override void OnStart()

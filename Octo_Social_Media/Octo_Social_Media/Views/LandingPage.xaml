@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Octo_Social_Media.Views.LandingPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                <Button
+                    Text="Example that came with the layout"
+                    Clicked="MainPageExample"/>
+
+                <Button
+                    Text="Account Page"
+                    Clicked="AccountPage"/>
+
+                <Button
+                    Text="Explore Page"
+                    Clicked="ExplorePage"/>
+
+                <Button
+                    Text="Main Feed"
+                    Clicked="MainFeedPage"/>
+
+                <Button
+                    Text="Message Page"
+                    Clicked="MessagePage"/>
+
+                <Button
+                    Text="Personal Page"
+                    Clicked="PersonalPage"/>
+
+                <Button
+                    Text="Search Page"
+                    Clicked="SearchPage"/>
+
+                <Button
+                    Text="Settings Page"
+                    Clicked="SettingsPage"/>
+
+                <Button
+                    Text="Sign In"
+                    Clicked="SignInPage"/>
+
+                <Button
+                    Text="Sign Up"
+                    Clicked="SignUpPage"/>
+
+                <Button
+                    Text="Trending Page"
+                    Clicked="TrendingPage"/>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
