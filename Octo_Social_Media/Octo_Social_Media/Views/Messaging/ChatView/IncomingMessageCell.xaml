@@ -5,15 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Octo_Social_Media.Views.IncomingMessageCell">
-  <ViewCell.View>
-        <Frame BackgroundColor="#FFFFFF"
-               BorderColor="#954FE8"
+    <Frame BackgroundColor="LightBlue"
+               BorderColor="DarkBlue"
                Padding="10"
                HasShadow="False">
 
-            <Label Text= "{Binding Text}"
-                    TextColor="#000000"/>
+            <Label Text="{Binding Text}"
+                    TextColor="Black"/>
             
-        </Frame>
-    </ViewCell.View>
+     </Frame>
+    
 </ViewCell>

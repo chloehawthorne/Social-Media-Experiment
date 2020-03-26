@@ -8,7 +8,9 @@ namespace Octo_Social_Media
 {
     public partial class App : Application
     {
-        public static string User = "Chloe";
+        //For messages
+        public static string User = "User";
+
         public App()
         {
             InitializeComponent();

@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Octo_Social_Media.Services"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Octo_Social_Media.Services" xmlns:partials="clr-namespace:Octo_Social_Media.Views.Messaging.ChatView"
              mc:Ignorable="d"
              x:Class="Octo_Social_Media.Views.ChatPage">
+    
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:ChatTemplateSelector x:Key="MessageTemplateSelector"/>
+            <local:ChatTemplateSelector x:Key="ChatTemplateSelector"/>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -20,8 +21,8 @@
             </Grid.RowDefinitions>
 
             <ListView Grid.Row="0" 
-                 ItemTemplate="{StaticResource MessageTemplateSelector}" 
-                 ItemsSource="{Binding Messages}" 
+                ItemTemplate="{StaticResource ChatTemplateSelector}" 
+                 ItemsSource="{Binding TextToSend}" 
                  Margin="0" 
                  HasUnevenRows="True" 
                  VerticalOptions="FillAndExpand" 
@@ -34,7 +35,7 @@
                      Grid.Row="1"/>
 
             <partials:ChatInputBarView Grid.Row="2"
-                                   Margin="0,0,10,0"/>
+                                       Margin="0,0,10,0"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

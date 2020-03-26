@@ -30,6 +30,7 @@
             <Label Text="Send"
                    Grid.Row="0"
                    Grid.Column="1"
+                   Grid.RowSpan="2"
                    VerticalTextAlignment="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer

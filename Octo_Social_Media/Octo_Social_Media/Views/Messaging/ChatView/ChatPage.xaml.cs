@@ -16,5 +16,6 @@ namespace Octo_Social_Media.Views
         {
             InitializeComponent();
         }
+            
     }
 }

@@ -42,8 +42,13 @@ namespace Octo_Social_Media.Views
             await Navigation.PushAsync(new MainPage());
         }
 
+        private async void ChatPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChatPage());
+        }
         private async void TrendingPage(object sender, EventArgs e)
         {
+
             await Navigation.PushAsync(new MainPage());
         }
         private async void ExplorePage(object sender, EventArgs e)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Octo_Social_Media.Views
+namespace Octo_Social_Media.Views.Messaging.ChatView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Messages : ContentPage

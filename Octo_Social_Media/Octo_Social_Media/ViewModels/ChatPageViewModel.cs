@@ -19,7 +19,7 @@ namespace Octo_Social_Media.ViewModels
         public ChatPageViewModel()
         {
             Messages.Add(new MessageItem() { Text = "Hi" });
-            Messages.Add(new MessageItem() { Text = "Hey, This really works :O" });
+            Messages.Add(new MessageItem() { Text = "Hey, This really works :O", User= App.User });
             Messages.Add(new MessageItem() { Text = "Hey, how are you?" });
 
             OnSendCommand = new Command(() =>
