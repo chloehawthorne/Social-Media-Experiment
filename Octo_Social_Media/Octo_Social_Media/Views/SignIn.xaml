@@ -6,10 +6,12 @@
              mc:Ignorable="d"
              x:Class="Octo_Social_Media.Views.SignIn"
              Title="Sign In">
+    
     <ContentPage.Content>
         <StackLayout
             BackgroundColor="MintCream"
-            Spacing="0">
+            Spacing="0"
+            Padding="5,5,5,5">
               
             <Grid
                 RowSpacing="0">
@@ -66,9 +68,7 @@
 
                 <Button
                     Text="Sign In"
-                    TextColor="White"
-                    FontSize="20"
-                    BackgroundColor="Green"
+                    Style="{StaticResource ButtonStyleCaitlin}"
                     Grid.Row="9"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"/>
