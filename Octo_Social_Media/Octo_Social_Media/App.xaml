@@ -36,6 +36,9 @@
                 <Setter Property="TextColor" Value="Green" />
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Grid.Column" Value="0" />
+                <Setter Property="Grid.ColumnSpan" Value="2" />
+                <Setter Property="Grid.Row" Value="0" />
             </Style>
 
             <Style x:Key="SignInLabelCaitlin" TargetType="Label">
@@ -50,6 +53,11 @@
             </Style>
 
             <Style x:Key="SignUpLabelCaitlin" TargetType="Label">
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontSize" Value="25" />
+            </Style>
+
+            <Style x:Key="SearchLabelsCaitlin" TargetType="Label">
                 <Setter Property="TextColor" Value="Green" />
                 <Setter Property="FontSize" Value="25" />
             </Style>
