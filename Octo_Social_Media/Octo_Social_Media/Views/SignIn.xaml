@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Octo_Social_Media.Views.SignIn"
+             Title="Sign In">
+    
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="MintCream"
+            Spacing="0"
+            Padding="5,5,5,5">
+              
+            <Grid
+                RowSpacing="0">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label/>
+
+                <Label 
+                    Text="Sign In"
+                    FontSize="50"
+                    TextColor="Green"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="1"/>
+
+                <Label
+                    Text="Username"
+                    TextColor="Green"
+                    FontSize="30"
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+
+                <Entry
+                    Placeholder="Please enter your username here"
+                    PlaceholderColor="Green"
+                    Opacity="0.5"
+                    ClearButtonVisibility="WhileEditing"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
+
+
+                <Label
+                    Text="Password"
+                    TextColor="Green"
+                    FontSize="30"
+                    Grid.Row="6"
+                    Grid.Column="0"/>
+
+                <Entry
+                    Placeholder="Please enter your password here"
+                    PlaceholderColor="Green"
+                    Opacity="0.5"
+                    ClearButtonVisibility="WhileEditing"
+                    IsPassword="True"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
+
+                <Button
+                    Text="Sign In"
+                    Style="{StaticResource ButtonStyleCaitlin}"
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

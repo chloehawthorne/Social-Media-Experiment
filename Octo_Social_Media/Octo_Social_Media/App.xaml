@@ -11,9 +11,16 @@
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarBackgroundColor" Value="Green" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+
+            <Style  x:Key="ButtonStyleCaitlin"  TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="BackgroundColor" Value="Green" />
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
     
