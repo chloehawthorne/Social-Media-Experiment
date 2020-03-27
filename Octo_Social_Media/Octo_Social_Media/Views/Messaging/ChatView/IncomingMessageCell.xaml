@@ -8,11 +8,11 @@
     <Frame BackgroundColor="LightBlue"
            BorderColor="DarkBlue"
            Padding="10"
-           Rotation="180"
+           HasShadow="False"
            FlowDirection="LeftToRight"
-           HasShadow="False">
-
-            <Label Text="{Binding Text}"
+           Rotation="180"
+           Margin="10,10,80,10">
+        <Label Text="{Binding Text}"
                     TextColor="Black"/>
             
      </Frame>

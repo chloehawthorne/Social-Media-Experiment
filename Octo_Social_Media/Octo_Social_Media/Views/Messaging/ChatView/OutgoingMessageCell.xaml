@@ -5,14 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Octo_Social_Media.Views.OutgoingMessageCell">
-    
-    <Frame BackgroundColor="LightGray"
-           BorderColor="DarkGray"
+
+    <Frame BackgroundColor="MediumPurple"
+           BorderColor="Purple"
            Padding="10"
            HasShadow="False"
-           Margin="80,10,10,10"
+           FlowDirection="LeftToRight"
            Rotation="180"
-           FlowDirection="LeftToRight">
+           Margin="80,10,10,10"
+           >
+
         <Label Text="{Binding Text}"
                    TextColor="White"/>
         </Frame>

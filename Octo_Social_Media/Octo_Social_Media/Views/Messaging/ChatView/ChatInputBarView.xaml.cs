@@ -24,5 +24,9 @@ namespace Octo_Social_Media.Views.Messaging.ChatView
             (this.Parent.Parent.BindingContext as ChatPageViewModel).OnSendCommand.Execute(null);
             chatTextInput.Focus();
         }
+        public void UnFocusEntry()
+        {
+            chatTextInput?.Unfocus();
+        }
     }
 }
