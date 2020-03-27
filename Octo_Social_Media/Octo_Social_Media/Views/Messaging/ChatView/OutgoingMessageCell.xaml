@@ -7,10 +7,12 @@
              x:Class="Octo_Social_Media.Views.OutgoingMessageCell">
     
     <Frame BackgroundColor="LightGray"
-               BorderColor="DarkGray"
-               Padding="10"
-               HasShadow="False"
-               Margin="80,10,10,10">
+           BorderColor="DarkGray"
+           Padding="10"
+           HasShadow="False"
+           Margin="80,10,10,10"
+           Rotation="180"
+           FlowDirection="LeftToRight">
         <Label Text="{Binding Text}"
                    TextColor="White"/>
         </Frame>

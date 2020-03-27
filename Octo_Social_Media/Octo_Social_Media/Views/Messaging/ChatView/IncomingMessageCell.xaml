@@ -6,9 +6,11 @@
              mc:Ignorable="d"
              x:Class="Octo_Social_Media.Views.IncomingMessageCell">
     <Frame BackgroundColor="LightBlue"
-               BorderColor="DarkBlue"
-               Padding="10"
-               HasShadow="False">
+           BorderColor="DarkBlue"
+           Padding="10"
+           Rotation="180"
+           FlowDirection="LeftToRight"
+           HasShadow="False">
 
             <Label Text="{Binding Text}"
                     TextColor="Black"/>

@@ -33,6 +33,5 @@ namespace Octo_Social_Media.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
     }
 }
