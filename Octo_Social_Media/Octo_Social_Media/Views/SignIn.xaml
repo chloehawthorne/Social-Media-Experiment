@@ -9,12 +9,10 @@
     
     <ContentPage.Content>
         <StackLayout
-            BackgroundColor="MintCream"
-            Spacing="0"
-            Padding="5,5,5,5">
+            Style="{StaticResource StackLayoutCaitlin}">
               
             <Grid
-                RowSpacing="0">
+                Style="{StaticResource GridStylingCaitlin}">
                 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -24,26 +22,20 @@
 
                 <Label 
                     Text="Sign In"
-                    FontSize="50"
-                    TextColor="Green"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
+                    Style="{StaticResource HeaderLabelCaitlin}"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Grid.Row="1"/>
 
                 <Label
                     Text="Username"
-                    TextColor="Green"
-                    FontSize="30"
+                    Style="{StaticResource SignInLabelCaitlin}"
                     Grid.Row="3"
                     Grid.Column="0"/>
 
                 <Entry
                     Placeholder="Please enter your username here"
-                    PlaceholderColor="Green"
-                    Opacity="0.5"
-                    ClearButtonVisibility="WhileEditing"
+                    Style="{StaticResource EntryStyleCaitlin}"
                     Grid.Row="4"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"/>
@@ -51,16 +43,13 @@
 
                 <Label
                     Text="Password"
-                    TextColor="Green"
-                    FontSize="30"
+                    Style="{StaticResource SignInLabelCaitlin}"
                     Grid.Row="6"
                     Grid.Column="0"/>
 
                 <Entry
                     Placeholder="Please enter your password here"
-                    PlaceholderColor="Green"
-                    Opacity="0.5"
-                    ClearButtonVisibility="WhileEditing"
+                    Style="{StaticResource EntryStyleCaitlin}"
                     IsPassword="True"
                     Grid.Row="7"
                     Grid.Column="0"

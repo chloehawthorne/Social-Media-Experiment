@@ -21,6 +21,39 @@
                 <Setter Property="BackgroundColor" Value="Green" />
             </Style>
 
+            <Style x:Key="StackLayoutCaitlin" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="MintCream" />
+                <Setter Property="Spacing" Value="0" />
+                <Setter Property="Padding" Value="5,5,5,5" />
+            </Style>
+
+            <Style x:Key="GridStylingCaitlin" TargetType="Grid">
+                <Setter Property="RowSpacing" Value="0" />
+            </Style>
+
+            <Style x:Key="HeaderLabelCaitlin" TargetType="Label">
+                <Setter Property="FontSize" Value="50" />
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="SignInLabelCaitlin" TargetType="Label">
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontSize" Value="30" />
+            </Style>
+
+            <Style x:Key="EntryStyleCaitlin" TargetType="Entry">
+                <Setter Property="Placeholder" Value="Green" />
+                <Setter Property="Opacity" Value="0.5" />
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+            </Style>
+
+            <Style x:Key="SignUpLabelCaitlin" TargetType="Label">
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontSize" Value="25" />
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
     

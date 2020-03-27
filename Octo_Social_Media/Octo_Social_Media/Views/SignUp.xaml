@@ -7,14 +7,12 @@
              x:Class="Octo_Social_Media.Views.SignUp">
     <ContentPage.Content>
         <StackLayout            
-            BackgroundColor="MintCream"
-            Spacing="0"
-            Padding="5,5,5,5">
+            Style="{StaticResource StackLayoutCaitlin}">
 
             <ScrollView>
 
                 <Grid
-                    RowSpacing="0">
+                    Style="{StaticResource GridStylingCaitlin}">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -24,74 +22,57 @@
 
                     <Label 
                         Text="Sign Up"
-                        FontSize="50"
-                        TextColor="Green"
-                        FontAttributes="Bold"
-                        HorizontalOptions="Center"
+                        Style="{StaticResource HeaderLabelCaitlin}"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Grid.Row="1"/>
 
                     <Label
                         Text="First Name"
-                        TextColor="Green"
-                        FontSize="25"
+                        Style="{StaticResource SignUpLabelCaitlin}"
                         Grid.Row="3"
                         Grid.Column="0"/>
 
                     <Entry
                         Placeholder="First name here"
-                        PlaceholderColor="Green"
-                        Opacity="0.5"
-                        ClearButtonVisibility="WhileEditing"
+                        Style="{StaticResource EntryStyleCaitlin}"
                         Grid.Row="4"
                         Grid.Column="0"/>
 
                     <Label
                         Text="Last Name"
-                        TextColor="Green"
-                        Padding="5,0,0,0"
-                        FontSize="25"
+                        Style="{StaticResource SignUpLabelCaitlin}"
                         Grid.Row="3"
                         Grid.Column="1"/>
 
                     <Entry
                         Placeholder="Last name here"
-                        PlaceholderColor="Green"
-                        Opacity="0.5"
-                        ClearButtonVisibility="WhileEditing"
+                        Style="{StaticResource EntryStyleCaitlin}"
                         Grid.Row="4"
                         Grid.Column="1"/>
 
                     <Label
                         Text="Email"
-                        TextColor="Green"
-                        FontSize="25"
+                        Style="{StaticResource SignUpLabelCaitlin}"
                         Grid.Row="6"
                         Grid.Column="0"/>
 
                     <Entry
                         Placeholder="Email here"
-                        PlaceholderColor="Green"
-                        Opacity="0.5"
-                        ClearButtonVisibility="WhileEditing"
+                        Style="{StaticResource EntryStyleCaitlin}"
                         Grid.Row="7"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"/>
 
                     <Label
                         Text="Username"
-                        TextColor="Green"
-                        Padding="5,0,0,0"
-                        FontSize="25"
+                        Style="{StaticResource SignUpLabelCaitlin}"
                         Grid.Row="9"
                         Grid.Column="0"/>
 
                     <Entry
                         Placeholder="Username here"
-                        PlaceholderColor="Green"
-                        Opacity="0.5"
-                        ClearButtonVisibility="WhileEditing"
+                        Style="{StaticResource EntryStyleCaitlin}"
                         Grid.Row="10"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"/>
@@ -99,27 +80,36 @@
 
                     <Label
                         Text="Password"
-                        TextColor="Green"
-                        FontSize="25"
+                        Style="{StaticResource SignUpLabelCaitlin}"
                         Grid.Row="12"
                         Grid.Column="0"/>
 
                     <Entry
                         Placeholder="Password here"
-                        PlaceholderColor="Green"
-                        Opacity="0.5"
-                        ClearButtonVisibility="WhileEditing"
+                        Style="{StaticResource EntryStyleCaitlin}"
                         IsPassword="True"
                         Grid.Row="13"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"/>
+                        Grid.Column="0"/>
+
+                    <Label
+                        Text="Confirm Password"
+                        Style="{StaticResource SignUpLabelCaitlin}"
+                        Grid.Row="12"
+                        Grid.Column="1" />
+
+                    <Entry
+                        Placeholder="Password here"
+                        Style="{StaticResource EntryStyleCaitlin}"
+                        IsPassword="True"
+                        Grid.Row="13"
+                        Grid.Column="1" />
 
                     <Button
                         Text="Sign Up"
                         Style="{StaticResource ButtonStyleCaitlin}"
                         Grid.Row="15"
                         Grid.Column="0"
-                        Grid.ColumnSpan="2"/>
+                        Grid.ColumnSpan="1"/>
 
                 </Grid>
             </ScrollView>
