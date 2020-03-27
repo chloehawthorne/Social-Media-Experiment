@@ -60,7 +60,7 @@ namespace Octo_Social_Media.Views
         }
         private async void SignUpPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new SignUp());
         }
         private async void SignInPage(object sender, EventArgs e)
         {
