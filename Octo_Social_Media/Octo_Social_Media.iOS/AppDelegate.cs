@@ -20,12 +20,16 @@ namespace Octo_Social_Media.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Akavache.Registrations.Start("AkavacheExperiment");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+
+
         }
     }
 }
