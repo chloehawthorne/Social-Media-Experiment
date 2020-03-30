@@ -42,6 +42,8 @@ namespace Octo_Social_Media.ViewModels
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
+
+                    //testing it works
                     await _cache.InsertObject<string>("test", "this is a string");
                     string returned = await _cache.GetObject<string>("test");
                     Items.Add(item);
