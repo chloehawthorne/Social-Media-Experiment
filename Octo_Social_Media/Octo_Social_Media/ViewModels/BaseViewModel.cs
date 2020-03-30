@@ -13,6 +13,7 @@ namespace Octo_Social_Media.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public ICache _cache => DependencyService.Get<ICache>();
 
         bool isBusy = false;
         public bool IsBusy
