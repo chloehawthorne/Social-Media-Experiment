@@ -21,7 +21,7 @@
             </Grid.RowDefinitions>
 
             <controls:ExtendedListView Grid.Row="0" 
-                 ItemTemplate="{StaticResource ChatTemplateSelector}" 
+                 ItemTemplate="{StaticResource ChatTemplateSelector }" 
                  ItemsSource="{Binding Messages}" 
                  Margin="0"
                  ItemTapped="OnListTapped"
