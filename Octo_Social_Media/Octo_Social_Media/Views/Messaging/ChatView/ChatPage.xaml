@@ -34,9 +34,9 @@
                  ItemDisappearingCommand="{Binding MessageDisappearingCommand}">
             </controls:ExtendedListView>
 
-            <Frame HorizontalOptions="EndAndExpand" 
+            <Frame HorizontalOptions="StartAndExpand" 
                                  Margin="0,0,2,15"
-                                 VerticalOptions="End"
+                                 VerticalOptions="Start"
                                  HasShadow="false" 
                                  Grid.Row="0"  
                                  HeightRequest="50" WidthRequest="50"
