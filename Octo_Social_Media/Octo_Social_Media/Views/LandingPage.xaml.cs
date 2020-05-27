@@ -57,7 +57,7 @@ namespace Octo_Social_Media.Views
         }
         private async void SearchPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new SearchPage());
         }
         private async void MainFeedPage(object sender, EventArgs e)
         {
