@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Octo_Social_Media.Views.InboxListViewPage"
+             Title="Inbox">
+    <ListView x:Name="MyListView"
+            ItemsSource="{Binding Inbox}"
+              HasUnevenRows="True"
+              HorizontalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout BackgroundColor="#FFFFFF" >
+                        <Label Text="{Binding Username}" FontSize="Medium" TextColor="Black"/>
+                        <Label Text="{Binding FinalMessage}" FontSize="Micro" TextColor="#D8D8DD"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        
+                
+        
+</ContentPage>
