@@ -9,16 +9,25 @@ using System.Text;
 
 namespace Octo_Social_Media.ViewModels
 {
-   public  class InboxViewModel : LandingPage
+   public  class InboxViewModel : INotifyPropertyChanged
     {
         ObservableCollection<InboxModel> inbox;
         public ObservableCollection<InboxModel> Inbox
         {
-            get => inbox;
             set
             {
-                inbox = value;
-                
+                if(inbox != value)
+                {
+                    inbox = value;
+                    if (PropertyChanged!= null)
+                    {
+                        PropertyChanged(this, new PropertyChangedEventArgs("Inbox"));
+                    }
+                }
+            }
+            get
+            {
+                return inbox; 
             }
         }
         public InboxViewModel()
@@ -35,8 +44,7 @@ namespace Octo_Social_Media.ViewModels
             list.Add(new InboxModel() { Username = "JohnC3na", Message = "u can't see me :p" });
             Inbox = list ;
         }
-        /*#region INotifyPropertyChanged
+       
         public event PropertyChangedEventHandler PropertyChanged;
-        #endregion*/
     }
 }
