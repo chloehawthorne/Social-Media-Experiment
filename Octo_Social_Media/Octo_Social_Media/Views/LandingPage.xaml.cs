@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Octo_Social_Media.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,7 +40,7 @@ namespace Octo_Social_Media.Views
 
         private async void MessagePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new InboxListViewPage());
         }
 
         private async void TrendingPage(object sender, EventArgs e)
