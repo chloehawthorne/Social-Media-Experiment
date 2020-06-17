@@ -10,7 +10,7 @@
            BorderColor="Purple"
            Padding="10"
            HasShadow="False"
-           FlowDirection="LeftToRight"
+           FlowDirection="RightToLeft"
            Rotation="180"
            Margin="80,10,10,10"
            >

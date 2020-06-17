@@ -22,7 +22,7 @@ namespace Octo_Social_Media.Services
                 return null;
 
 
-            return (messageVm.User == App.User) ? outgoingDataTemplate : incomingDataTemplate;
+            return (messageVm.User != App.User) ? incomingDataTemplate : outgoingDataTemplate;
         }
 
     }

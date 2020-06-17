@@ -34,9 +34,9 @@
                  ItemDisappearingCommand="{Binding MessageDisappearingCommand}">
             </controls:ExtendedListView>
 
-            <Frame HorizontalOptions="StartAndExpand" 
+            <Frame HorizontalOptions="EndAndExpand" 
                                  Margin="0,0,2,15"
-                                 VerticalOptions="Start"
+                                 VerticalOptions="End"
                                  HasShadow="false" 
                                  Grid.Row="0"  
                                  HeightRequest="50" WidthRequest="50"
@@ -50,10 +50,10 @@
                               IsVisible="{Binding PendingMessageCountVisible}"
                               VerticalTextAlignment="Center"
                               TextColor="{DynamicResource primary}"/>
-                    <Image Source="ic_scrolldown"
+                    <!--<Image Source="ic_scrolldown"
                                WidthRequest="30"
                                HeightRequest="30"
-                               VerticalOptions="CenterAndExpand"/>
+                               VerticalOptions="CenterAndExpand"/>-->
 
                 </StackLayout>
                 <Frame.GestureRecognizers>
