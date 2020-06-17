@@ -27,10 +27,7 @@ namespace Octo_Social_Media.ViewModels
             MessageAppearingCommand = new Command<MessageItem>(OnMessageAppearing);
             MessageDisappearingCommand = new Command<MessageItem>(OnMessageDisappearing);
 
-            Messages.Insert(0, new MessageItem() { Text = "Hi" });
-            Messages.Insert(0, new MessageItem() { Text = "How are you?", User = App.User });
-            Messages.Insert(0, new MessageItem() { Text = "I'm good, how about you?" });
-            Messages.Insert(0, new MessageItem() { Text = "I'm fine thanks :) How is programming going?", User = App.User });
+           
 
             OnSendCommand = new Command(() =>
             {
