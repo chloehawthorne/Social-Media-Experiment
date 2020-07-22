@@ -29,6 +29,9 @@
                     Text="Message Page"
                     Clicked="MessagePage"/>
 
+                <Button Text="Chat Page"
+                        Clicked="ChatPage"/>
+
                 <Button
                     Text="Personal Page"
                     Clicked="PersonalPage"/>

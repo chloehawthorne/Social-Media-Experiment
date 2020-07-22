@@ -8,14 +8,18 @@ namespace Octo_Social_Media
 {
     public partial class App : Application
     {
+        //For messages
+        public static string User = "User";
 
         public App()
         {
             InitializeComponent();
-
+            
             DependencyService.Register<MockDataStore>();
+
             MainPage = new NavigationPage(new LandingPage());
-        }
+            
+    }
 
         protected override void OnStart()
         {
